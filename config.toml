@@ -1,0 +1,22 @@
+# API ID and hash to authenticate the application (not the user).
+api_id =8867782
+api_hash = "c7888e933d62abf617f29925f9ae769a"
+
+# Only enable in chats with the given IDs.
+#
+# If this is empty, it will be enabled in all chats except `disabled_chats`,
+# because it makes no sense to run the logger with zero chats.
+enabled_chats = []
+
+# Disable in chats with the given IDs.
+disabled_chats = []
+
+# Whether to save received media.
+save_media = true
+
+# Whether to log to files instead of stdout.
+log_to_file = false
+
+# Whether to use ANSI color codes for logs.
+# If not specified, the default is to use colors only when logging to stdout and it is a tty.
+#log_colors = true
