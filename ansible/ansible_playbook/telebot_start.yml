@@ -1,0 +1,14 @@
+---
+  - hosts: all
+    become: yes
+    tasks:
+      - name: copy script to server
+        copy:
+          src: /etc/ansible/script/start.sh
+          dest: /home/start.sh
+          mode: u=rwx,g=rx,o=rx
+        
+
+      - name: Run installation script
+        shell: /home/start.sh
+        
